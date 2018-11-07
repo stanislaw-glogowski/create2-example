@@ -1,0 +1,16 @@
+{
+  "name": "create2",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "compile": "truffle compile --reset --network=test",
+    "migrate": "truffle migrate --reset --network=test",
+    "test": "truffle test --reset --network=test"
+  },
+  "dependencies": {
+    "debug": "^4.1.0",
+    "expect": "^23.6.0",
+    "truffle": "^5.0.0-beta.1",
+    "truffle-hdwallet-provider": "^1.0.0-web3one.0"
+  }
+}

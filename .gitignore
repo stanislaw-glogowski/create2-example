@@ -1,0 +1,7 @@
+.*
+!.gitignore
+!.gitattributes
+build/
+node_modules/
+parity
+*.log
