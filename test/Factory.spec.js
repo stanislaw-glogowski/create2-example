@@ -22,8 +22,6 @@ contract('Factory', ([account]) => {
 
     it('should deploy Example contract', async () => {
       const estimatedGas = await Example.new.estimateGas();
-
-
       const example = await await Example.new();
 
       expect(await example.getOwner()).toBe(account);
@@ -36,7 +34,6 @@ contract('Factory', ([account]) => {
 
     it('should deploy Example contract', async () => {
       const { logs: [{ event, args }], receipt: { gasUsed } } = await factory.deploy();
-
       const example = await Example.at(args.addr);
 
       expect(event).toBe('Deployed');
@@ -52,7 +49,6 @@ contract('Factory', ([account]) => {
 
     it('should deploy Example contract', async () => {
       const { logs: [{ event, args }], receipt: { gasUsed } } = await factory.deploy2(salt);
-
       const example = await Example.at(args.addr);
 
       const computedAddr = buildCreate2Address(
