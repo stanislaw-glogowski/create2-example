@@ -5,7 +5,7 @@ Following example demonstrate using [EIP 1014: Skinny CREATE2](https://eips.ethe
 ## Installation
 
 ```bash
-$ git clone git@github.com:blockid/create2.git
+$ git clone git@github.com:stanislaw-glogowski/create2.git
 $ cd ./create2
 $ npm i
 ```
