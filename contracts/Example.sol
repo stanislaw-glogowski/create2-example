@@ -6,11 +6,6 @@ contract Example {
 
   address payable owner;
 
-  modifier onlyOwner() {
-    require(msg.sender == owner);
-    _;
-  }
-
   constructor() public {
     owner = msg.sender;
   }
@@ -19,13 +14,13 @@ contract Example {
     return owner;
   }
 
-  function transferOwnership(address payable _owner) public onlyOwner {
+  function transferOwnership(address payable _owner) public {
     owner = _owner;
 
     emit OwnerChanged(owner);
   }
 
-  function destroy() public onlyOwner {
+  function destroy() public {
     selfdestruct(owner);
   }
 }
