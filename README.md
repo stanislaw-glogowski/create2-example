@@ -1,6 +1,11 @@
 # CREATE2 opcode example
 
-Following example demonstrate using [EIP 1014: Skinny CREATE2](https://eips.ethereum.org/EIPS/eip-1014 )
+[EIP 1014: Skinny CREATE2](https://eips.ethereum.org/EIPS/eip-1014 ) usage example.
+
+see: 
+
+* [factory contract source code](./contracts/Factory.sol)
+* [factory contract tests](./test/Factory.spec.js)
 
 ## Installation
 
