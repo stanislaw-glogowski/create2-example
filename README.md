@@ -1,4 +1,4 @@
-# CREATE2 opcode example
+# Ethereum CREATE2
 
 [EIP 1014: Skinny CREATE2](https://eips.ethereum.org/EIPS/eip-1014 ) usage example.
 
